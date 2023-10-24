@@ -1,67 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
-
-$bgcolor:#03020D;
-$primary-color: white;
-$secondary-color: #30706D;
-$tertiary-color:#0c4b6f;
-$font-stack: 'Montserrat', sans-serif;
+* {
+    padding: 0;
+    margin: 0;
+    
+  }
 
 body {
-  font-family:100% $font-stack;
+ 
   margin: 0;
   padding: 0;
   height:100vw;
-  background: $bgcolor;
-  font-family: $font-stack;
+  background:#ffffff;
+  font-family: 'Montserrat', sans-serif;
   text-align:center;
+ 
+  
+}
 
-  /* nav */
-  nav{
-      z-index: 10;
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;  
-       }
-    li a {
-      display: block;
-      color: $secondary-color;
-      text-align: center;
-      padding: 12px 16px;
-      text-decoration: none;
-  }
-    li {
-      float: left;
-      border-right:1px solid #0f0202;
-    }
-  }
-
-  /*header*/
-  header {
-    font-family: $font-stack;
+header {
     text-align: center;
     height: 80vw;
     background-image: url(background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
-    h1 {
-      
-      color: $secondary-color;
-      font-size: 100px;
-      text-align: center;
-      position: relative;
-       top: 100px;
-       right: 120px;
-       padding: 0;
-       margin: 0;
-    }
+}
+
+
+nav {
+    z-index: 10;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+}
+
+  li a {
+    display: block;
+    color: #30706D;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+  li {
+    float: left;
+    border-right:1px solid #0f0202;
   }
-  /*Article*/
-  article {
-   background-color: $bgcolor;
-   h1 {
-    color: $primary-color;
+
+  header a, button {
+    text-align: center;
+    background-color: #30706D;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+    position: relative;
+    right: 700px;
+    bottom: 80px;
+  }
+ 
+
+  h1 {
+    color: #30706D;
+    font-size: 100px;
+    text-align: center;
+    position: relative;
+     top: 100px;
+     right: 120px;
+     padding: 0;
+     margin: 0;
+  }
+
+article h1 {
+    color: #0c4b6f;
     font-size: 50px;
     text-align: center;
     position: relative;
@@ -69,33 +83,26 @@ body {
      left: 20px;
      padding: 0;
      margin: 0;
-  }
-  
+}
 
-  button {
-    text-align: center;
-    background-color: $primary-color;
-    color: $secondary-color;
-    border-radius: 25px;
-    padding: 10px;
-    position: relative;
-    right: 700px;
-    bottom: 80px;
-  }
-
-  .interactive-map {
+  article .interactive-map {
    padding: 100px;
    position: relative;
    left: 50px;
-   display: block;
-   width: 100%;
-   margin: 2% auto;
-   max-width: 1200px;
-   max-height: 800px;
-   overflow: hidden;
-   border-radius: 10px;
   }
-
+  
+  
+  .interactive-map {
+    display: block;
+    width: 100%;
+    margin: 2% auto;
+    max-width: 1200px;
+    max-height: 800px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+  }
+  
   .interactive-map > img {
     vertical-align: top;
     position: relative;
@@ -226,85 +233,84 @@ body {
     clear: both;
   }                                          
 
+
+
+
+  .dolomities-text h1 {
+    text-align: left;
+    font-size: 150px;
+    padding-left: 150px;
+    position: relative;
+    top: 340px;
+   
   }
 
-  section {
-    .dolomities-text h1 {
-      text-align: left;
-      font-size: 150px;
-      padding-left: 150px;
-      position: relative;
-      top: 455px;
-      color: $secondary-color;
-     
-    }
-  
-    .dolomities {
-      
-      p {
-        text-align: right;
-        position: relative;
-        right: 100px;
-        bottom: 350px;
-        color: $primary-color;
-       
-    } 
+  .dolomities p {
+    text-align: right;
+    position: relative;
+    right: 100px;
+    bottom: 250px;
+  }
 
-    h2 {
-      color: $tertiary-color;
-      font-size: 50px;
-      text-align: right;
-      position: relative;
-      right: 100px;
-    }
+  .dolomities h2 {
+    color: #045051;
+    font-size: 50px;
+    text-align: right;
+    position: relative;
+    top: 50px;
+    right: 100px;
 
-    img {
+
+  }
+    .dolomities img {
       position: relative;
       left: -330px;
-      bottom: 200px;
-    }
-
-    }
-  
-  
-  
-  
-     .venice-text h1 {
-          text-align: right;
-          font-size: 300px;
-         position: relative;
-         top: 600px;
-      right: 30px;
-         z-index: -1;
-         letter-spacing: 60px;
-         color: $secondary-color;
-        }
-      
-        .venice {
-          
-          p {
-            text-align: left;
-            position: relative;
-            bottom: 350px;
-            left: 150px;
-            color: $primary-color;
-            
-          }
-          h2 {
-            color: $tertiary-color;
-            font-size: 50px;
-            text-align: left;
-            position: relative;
-            left: 150px;
-          }
-          img {
-            position: relative;
-            left: 360px;
-            bottom: 220px;
-          }
-        } 
-
-       
+      bottom: 130px;
     
-  } 
-} 
+    
+    }
+
+
+
+   .venice-text h1 {
+        text-align: right;
+        font-size: 250px;
+       position: relative;
+       top: 420px;
+       right: 60px;
+       z-index: -1;
+       letter-spacing: 60px;
+      }
+    
+      .venice p {
+        text-align: left;
+        position: relative;
+        bottom: 250px;
+        left: 100px;
+      }
+    
+      .venice h2 {
+        color: #045051;
+        font-size: 50px;
+        text-align: left;
+        position: relative;
+        top: 50px;
+        left: 100px;
+        
+    
+    
+      }
+        .venice img {
+          position: relative;
+          left: 360px;
+          bottom: 140px;
+        
+        
+        }
+    
+
+
+  .laspazia {
+    align-items: right;
+    text-align: right;
+  }
