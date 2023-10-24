@@ -51,13 +51,15 @@ ul {
     border-right:1px solid #0f0202;
   }
 
-  nav button {
+  header a, button {
+    text-align: center;
     background-color: #30706D;
     color: white;
     border-radius: 25px;
     padding: 10px;
     position: relative;
-    right: 30px;
+    right: 700px;
+    bottom: 80px;
   }
  
 
@@ -67,7 +69,7 @@ ul {
     text-align: center;
     position: relative;
      top: 100px;
-     right: 70px;
+     right: 120px;
      padding: 0;
      margin: 0;
   }
@@ -89,9 +91,6 @@ article h1 {
    left: 50px;
   }
   
- 
- 
- 
   
   .interactive-map {
     display: block;
@@ -220,12 +219,12 @@ article h1 {
   /* Tooltip content*/
   
   .tooltip-text {
-    font-size: 0.7em;
+    font-size: 2em;
     line-height: 1.35;
     display: block;
     font-family: 'Open Sans';
     text-align: center;
-    padding: 1.31em 1.21em 1.21em 0;
+    padding: 1em 1em 1em 1em;
     color: #fff;
     position: relative !important;
   }
@@ -237,9 +236,79 @@ article h1 {
 
 
 
-  .venice {
+  .dolomities-text h1 {
     text-align: left;
+    font-size: 150px;
+    padding-left: 150px;
+    position: relative;
+    top: 340px;
+   
   }
+
+  .dolomities p {
+    text-align: right;
+    position: relative;
+    right: 100px;
+    bottom: 250px;
+  }
+
+  .dolomities h2 {
+    color: #045051;
+    font-size: 50px;
+    text-align: right;
+    position: relative;
+    top: 50px;
+    right: 100px;
+
+
+  }
+    .dolomities img {
+      position: relative;
+      left: -330px;
+      bottom: 130px;
+    
+    
+    }
+
+
+
+   .venice-text h1 {
+        text-align: right;
+        font-size: 250px;
+       position: relative;
+       top: 420px;
+       right: 60px;
+       z-index: -1;
+       letter-spacing: 60px;
+      }
+    
+      .venice p {
+        text-align: left;
+        position: relative;
+        bottom: 250px;
+        left: 100px;
+      }
+    
+      .venice h2 {
+        color: #045051;
+        font-size: 50px;
+        text-align: left;
+        position: relative;
+        top: 50px;
+        left: 100px;
+        
+    
+    
+      }
+        .venice img {
+          position: relative;
+          left: 360px;
+          bottom: 140px;
+        
+        
+        }
+    
+
 
   .laspazia {
     align-items: right;
