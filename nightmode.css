@@ -21,7 +21,7 @@ body nav ul {
 }
 body nav li a {
   display: block;
-  color: #30706D;
+  color: #116495;
   text-align: center;
   padding: 12px 16px;
   text-decoration: none;
@@ -40,8 +40,9 @@ body header {
 }
 body header h1 {
   color: #30706D;
-  font-size: 100px;
+  font-size: 180px;
   text-align: center;
+  font-weight: 900;
   position: relative;
   top: 100px;
   right: 120px;
@@ -191,6 +192,10 @@ body section {
   /*Florence*/
   /*Toscana*/
   /*Milan*/
+  /*Pisa*/
+  /*Verona*/
+  /*Roma*/
+  /*Puglia*/
 }
 body section .dolomities-text h1 {
   text-align: left;
@@ -215,7 +220,7 @@ body section .dolomities p {
   color: white;
 }
 body section .dolomities h2 {
-  color: #0c4b6f;
+  color: #116495;
   font-size: 50px;
   text-align: right;
   position: relative;
@@ -246,7 +251,7 @@ body section .venice p {
   color: white;
 }
 body section .venice h2 {
-  color: #0c4b6f;
+  color: #116495;
   font-size: 50px;
   text-align: left;
   position: relative;
@@ -270,11 +275,11 @@ body section .manarola p {
   text-align: right;
   position: relative;
   right: 100px;
-  bottom: 350px;
+  bottom: 400px;
   color: white;
 }
 body section .manarola h2 {
-  color: #0c4b6f;
+  color: #116495;
   font-size: 50px;
   text-align: right;
   position: relative;
@@ -304,7 +309,7 @@ body section .florence p {
   color: white;
 }
 body section .florence h2 {
-  color: #0c4b6f;
+  color: #116495;
   font-size: 50px;
   text-align: left;
   position: relative;
@@ -320,7 +325,7 @@ body section .toscana-text h1 {
   text-align: right;
   font-size: 120px;
   position: relative;
-  top: 450px;
+  top: 300px;
   right: 480px;
   z-index: -1;
   color: #30706D;
@@ -333,7 +338,7 @@ body section .toscana p {
   color: white;
 }
 body section .toscana h2 {
-  color: #0c4b6f;
+  color: #116495;
   font-size: 50px;
   text-align: right;
   position: relative;
@@ -358,18 +363,139 @@ body section .milan-text h1 {
 body section .milan p {
   text-align: left;
   position: relative;
-  bottom: 350px;
+  bottom: 380px;
   left: 150px;
   color: white;
 }
 body section .milan h2 {
-  color: #0c4b6f;
+  color: #116495;
   font-size: 50px;
   text-align: left;
   position: relative;
   left: 150px;
 }
 body section .milan img {
+  position: relative;
+  left: 360px;
+  bottom: 220px;
+  box-shadow: 0 0 30px #434343;
+}
+body section .pisa-text h1 {
+  text-align: right;
+  font-size: 300px;
+  position: relative;
+  top: 720px;
+  right: 540px;
+  color: white;
+}
+body section .pisa p {
+  text-align: right;
+  position: relative;
+  right: 100px;
+  bottom: 380px;
+  color: white;
+}
+body section .pisa h2 {
+  color: #116495;
+  font-size: 50px;
+  text-align: right;
+  position: relative;
+  right: 100px;
+}
+body section .pisa img {
+  position: relative;
+  left: -330px;
+  bottom: 200px;
+  box-shadow: 0 0 30px #434343;
+}
+body section .verona-text h1 {
+  text-align: right;
+  font-size: 300px;
+  position: relative;
+  top: 880px;
+  right: 430px;
+  color: white;
+}
+body section .verona p {
+  text-align: right;
+  position: relative;
+  right: 100px;
+  bottom: 320px;
+  color: white;
+}
+body section .verona h2 {
+  color: #116495;
+  font-size: 50px;
+  text-align: right;
+  position: relative;
+  right: 100px;
+}
+body section .verona img {
+  position: relative;
+  left: -330px;
+  bottom: 200px;
+  box-shadow: 0 0 30px #434343;
+}
+body section .back-img {
+  z-index: -2;
+  position: relative;
+  top: 1220px;
+  left: 190px;
+}
+body section .roma-text h1 {
+  text-align: right;
+  font-size: 300px;
+  position: relative;
+  top: 700px;
+  right: 75px;
+  z-index: -1;
+  letter-spacing: 60px;
+  color: #30706D;
+}
+body section .roma p {
+  text-align: left;
+  position: relative;
+  bottom: 410px;
+  left: 150px;
+  color: white;
+}
+body section .roma h2 {
+  color: #116495;
+  font-size: 50px;
+  text-align: left;
+  position: relative;
+  left: 150px;
+  bottom: 75px;
+}
+body section .roma img {
+  position: relative;
+  left: 360px;
+  bottom: 300px;
+  box-shadow: 0 0 30px #434343;
+}
+body section .puglia-text h1 {
+  text-align: right;
+  font-size: 200px;
+  position: relative;
+  top: 540px;
+  right: 400px;
+  color: #116495;
+}
+body section .puglia p {
+  text-align: left;
+  position: relative;
+  bottom: 340px;
+  left: 150px;
+  color: white;
+}
+body section .puglia h2 {
+  color: #30706D;
+  font-size: 50px;
+  text-align: left;
+  position: relative;
+  left: 150px;
+}
+body section .puglia img {
   position: relative;
   left: 360px;
   bottom: 220px;
