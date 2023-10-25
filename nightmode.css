@@ -9,6 +9,7 @@ body {
   /* nav */
   /*header*/
   /*Article*/
+  /* cell number */
 }
 body nav {
   z-index: 10;
@@ -176,7 +177,7 @@ body article .tooltip-text {
   display: block;
   font-family: "Open Sans";
   text-align: center;
-  padding: 1em 1em 1em 1em;
+  padding: 0em 1em 0em 1em;
   color: #fff;
   position: relative !important;
 }
@@ -199,11 +200,18 @@ body section .dolomities-text h1 {
   top: 455px;
   color: #30706D;
 }
+body section .dolomities h4 {
+  color: #30706D;
+  font-size: 27px;
+  text-align: right;
+  position: relative;
+  right: 100px;
+}
 body section .dolomities p {
   text-align: right;
   position: relative;
   right: 100px;
-  bottom: 350px;
+  bottom: 400px;
   color: white;
 }
 body section .dolomities h2 {
@@ -212,11 +220,12 @@ body section .dolomities h2 {
   text-align: right;
   position: relative;
   right: 100px;
+  bottom: 40px;
 }
 body section .dolomities img {
   position: relative;
   left: -330px;
-  bottom: 200px;
+  bottom: 270px;
   box-shadow: 0 0 30px #ccc;
 }
 body section .venice-text h1 {
@@ -282,7 +291,7 @@ body section .florence-text h1 {
   font-size: 300px;
   position: relative;
   top: 600px;
-  right: 30px;
+  right: 35px;
   z-index: -1;
   letter-spacing: 10px;
   color: #30706D;
@@ -364,5 +373,33 @@ body section .milan img {
   position: relative;
   left: 360px;
   bottom: 220px;
-  box-shadow: 0 0 30px #ccc;
+  box-shadow: 0 0 30px #434343;
+}
+body .gallery {
+  background: rgba(18, 139, 111, 0.23);
+  position: relative;
+  bottom: 150px;
+  justify-content: center;
+}
+body .gallery h3 {
+  text-align: center;
+  padding-right: 40px;
+  padding-top: 10px;
+  color: white;
+}
+body .gallery-cell {
+  width: 35%;
+  height: 400px;
+  margin-left: -10px;
+  background: transparent;
+  position: relative;
+  top: 80px;
+}
+body .gallery-cell:before {
+  display: block;
+  text-align: center;
+  align-items: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  color: transparent;
 }/*# sourceMappingURL=nightmode.css.map */

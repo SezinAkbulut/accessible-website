@@ -243,11 +243,20 @@ body {
   
     .dolomities {
       
+     
+      h4 {
+        color: $primary-color;
+        font-size: 27px;
+        text-align: right;
+        position: relative;
+        right: 100px;
+      }
+      
       p {
         text-align: right;
         position: relative;
         right: 100px;
-        bottom: 350px;
+        bottom: 400px;
        
     } 
 
@@ -257,14 +266,16 @@ body {
       text-align: right;
       position: relative;
       right: 100px;
+      bottom: 40px;
     }
 
     img {
       position: relative;
       left: -330px;
-      bottom: 200px;
-      box-shadow: 0 0 30px #434343;
+      bottom: 270px;
+      box-shadow: 0 0 30px #9c9c9c;
     }
+
 
     }
   
@@ -339,7 +350,7 @@ body {
         img {
           position: relative;
           left: -330px;
-          bottom: 200px;
+          bottom: 220px;
           box-shadow: 0 0 30px #434343;
         }
     
@@ -350,7 +361,7 @@ body {
           font-size: 300px;
          position: relative;
          top: 600px;
-        right: 30px;
+        right: 35px;
          z-index: -1;
          letter-spacing: 10px;
          color: $primary-color;
@@ -463,19 +474,33 @@ body {
     box-sizing: border-box;
   }
   
-  body { font-family: sans-serif; }
   
   .gallery {
-    background: #EEE;
+    background: rgba(18, 139, 111, 0.23);
     position: relative;
     bottom: 150px;
+    justify-content: center;
+   
+   h3 {
+    text-align: center;
+    padding-right: 40px;
+    padding-top: 10px;
+    color: $tertiary-color;
+   }
+  
   }
   
   .gallery-cell {
-    width: 66%;
+    width: 35%;
     height: 400px;
-    margin-left: 50px;
+    margin-left: -10px;
     background: transparent;
+    position: relative;
+    top: 100px;
+   
+  
+   
+   
     
   }
   
@@ -483,10 +508,11 @@ body {
   .gallery-cell:before {
     display: block;
     text-align: center;
+    align-items: center;
     content: counter(gallery-cell);
     line-height: 200px;
-    font-size: 80px;
-    color: white;
+    color: transparent;
+   
 } 
 
  } 

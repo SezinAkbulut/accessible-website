@@ -201,11 +201,18 @@ body section .dolomities-text h1 {
   top: 455px;
   color: #30706D;
 }
+body section .dolomities h4 {
+  color: #30706D;
+  font-size: 27px;
+  text-align: right;
+  position: relative;
+  right: 100px;
+}
 body section .dolomities p {
   text-align: right;
   position: relative;
   right: 100px;
-  bottom: 350px;
+  bottom: 400px;
 }
 body section .dolomities h2 {
   color: #0c4b6f;
@@ -213,12 +220,13 @@ body section .dolomities h2 {
   text-align: right;
   position: relative;
   right: 100px;
+  bottom: 40px;
 }
 body section .dolomities img {
   position: relative;
   left: -330px;
-  bottom: 200px;
-  box-shadow: 0 0 30px #434343;
+  bottom: 270px;
+  box-shadow: 0 0 30px #9c9c9c;
 }
 body section .venice-text h1 {
   text-align: right;
@@ -273,7 +281,7 @@ body section .manarola h2 {
 body section .manarola img {
   position: relative;
   left: -330px;
-  bottom: 200px;
+  bottom: 220px;
   box-shadow: 0 0 30px #434343;
 }
 body section .florence-text h1 {
@@ -281,7 +289,7 @@ body section .florence-text h1 {
   font-size: 300px;
   position: relative;
   top: 600px;
-  right: 30px;
+  right: 35px;
   z-index: -1;
   letter-spacing: 10px;
   color: #30706D;
@@ -365,25 +373,31 @@ body section .milan img {
 body * {
   box-sizing: border-box;
 }
-body body {
-  font-family: sans-serif;
-}
 body .gallery {
-  background: #EEE;
+  background: rgba(18, 139, 111, 0.23);
   position: relative;
   bottom: 150px;
+  justify-content: center;
+}
+body .gallery h3 {
+  text-align: center;
+  padding-right: 40px;
+  padding-top: 10px;
+  color: #0c4b6f;
 }
 body .gallery-cell {
-  width: 66%;
+  width: 35%;
   height: 400px;
-  margin-left: 50px;
+  margin-left: -10px;
   background: transparent;
+  position: relative;
+  top: 100px;
 }
 body .gallery-cell:before {
   display: block;
   text-align: center;
+  align-items: center;
   content: counter(gallery-cell);
   line-height: 200px;
-  font-size: 80px;
-  color: white;
+  color: transparent;
 }/*# sourceMappingURL=style.css.map */
