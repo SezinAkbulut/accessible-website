@@ -1,15 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 100% "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   height: 100vw;
-  background: #03020D;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  overflow-x: hidden;
+  background-color: #03020D;
+  /*back to top button*/
   /* nav */
   /*header*/
-  /*Article*/
-  /* cell number */
+}
+body #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  font-weight: 500px;
+  background-color: white;
+  color: #30706D;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+body #myBtn .up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+body #myBtn .arrow {
+  border: solid #30706D;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+body #myBtn:hover {
+  background-color: #555;
 }
 body nav {
   z-index: 10;
@@ -28,7 +61,7 @@ body nav li a {
 }
 body nav li {
   float: left;
-  border-right: 1px solid #0f0202;
+  border-right: 1px solid #03020D;
 }
 body header {
   font-family: "Montserrat", sans-serif;
@@ -37,86 +70,93 @@ body header {
   background-image: url(background-image-night-v.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 100%;
 }
 body header h1 {
   color: #30706D;
-  font-size: 180px;
+  font-size: clamp(0.5rem, 0.5rem + 8vw, 12rem);
   text-align: center;
   font-weight: 900;
   position: relative;
-  top: 100px;
-  right: 120px;
+  right: 30px;
+  top: 80px;
   padding: 0;
   margin: 0;
+  margin-right: 1em;
 }
-body article {
-  background-color: #03020D;
+body main {
+  /*Article*/
+}
+body main article {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
   /* Tooltip CSS Start */
   /* Gap filler */
   /* Tooltip */
   /* Arrow */
   /* Tooltip content*/
 }
-body article h1 {
+body main article h1 {
   color: white;
   font-size: 50px;
   text-align: center;
-  position: relative;
-  top: 10px;
-  left: 20px;
-  padding: 0;
-  margin: 0;
 }
-body article button {
+body main article button {
   text-align: center;
   background-color: white;
-  color: #30706D;
+  color: #03020D;
   border-radius: 25px;
   padding: 10px;
-  position: relative;
-  right: 700px;
-  bottom: 80px;
+  font-weight: 800;
 }
-body article .interactive-map {
+body main article .interactive-map {
   padding: 100px;
   position: relative;
-  left: 50px;
   display: block;
-  width: 100%;
+  max-width: 100%;
   margin: 2% auto;
-  max-width: 1200px;
-  max-height: 800px;
+  width: 1400px;
+  height: 1000px;
   overflow: hidden;
   border-radius: 10px;
 }
-body article .interactive-map > img {
+body main article .interactive-map > img {
   vertical-align: top;
   position: relative;
-  width: 97%;
+  max-width: 100%;
+  max-height: 97%;
+  width: 1400px;
+  height: 1000px;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-body article .map-point i {
+body main article .map-point i {
   font-size: 2vw;
   color: #b92020;
+  max-width: 100%;
 }
-body article .map-point img,
-body article .map-point span {
+body main article .map-point img,
+body main article .map-point span {
   cursor: pointer;
   outline: none;
   z-index: 2;
   position: absolute;
 }
-body article .map-point {
+body main article .map-point {
   transition: opacity 0.25s ease-in-out;
   -moz-transition: opacity 0.25s ease-in-out;
   -webkit-transition: opacity 0.25s ease-in-out;
 }
-body article .tooltip {
+body main article .tooltip {
   display: block;
   position: absolute;
   z-index: 0;
 }
-body article .tooltip-item::after {
+body main article .tooltip-item::after {
   content: "";
   position: absolute;
   width: 360px;
@@ -126,10 +166,10 @@ body article .tooltip-item::after {
   pointer-events: none;
   transform: translateX(-50%);
 }
-body article .tooltip:hover .tooltip-item::after {
+body main article .tooltip:hover .tooltip-item::after {
   pointer-events: auto;
 }
-body article .tooltip-content {
+body main article .tooltip-content {
   position: absolute;
   width: 256px;
   left: -28%;
@@ -144,20 +184,20 @@ body article .tooltip-content {
   cursor: default;
   pointer-events: none;
 }
-body article .tooltip-effect-4 .tooltip-content {
+body main article .tooltip-effect-4 .tooltip-content {
   transform-origin: 50% 100%;
   transform: scale3d(0.7, 0.3, 1);
   transition: opacity 0.2s, transform 0.2s;
 }
-body article .tooltip:hover .tooltip-content {
+body main article .tooltip:hover .tooltip-content {
   pointer-events: auto;
   opacity: 1;
   transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0);
 }
-body article .tooltip:hover {
+body main article .tooltip:hover {
   z-index: 9999;
 }
-body article .tooltip-content::after {
+body main article .tooltip-content::after {
   content: "";
   top: 100%;
   left: 50%;
@@ -172,7 +212,7 @@ body article .tooltip-content::after {
   margin-left: -10px;
   z-index: 99999;
 }
-body article .tooltip-text {
+body main article .tooltip-text {
   font-size: 2em;
   line-height: 1.35;
   display: block;
@@ -182,10 +222,10 @@ body article .tooltip-text {
   color: #fff;
   position: relative !important;
 }
-body article .clearfix {
+body main article .clearfix {
   clear: both;
 }
-body section {
+body main section {
   /*Dolomities*/
   /*Venecie*/
   /*La Spezia*/
@@ -197,254 +237,263 @@ body section {
   /*Roma*/
   /*Puglia*/
 }
-body section .dolomities-text h1 {
-  text-align: left;
-  font-size: 150px;
-  padding-left: 150px;
-  position: relative;
-  top: 455px;
-  color: #30706D;
+body main section .sections-right {
+  max-width: 100rem;
+  max-height: 100rem;
+  font-size: 1.3125rem;
+  /*carousel gallery*/
+  /* cell number */
 }
-body section .dolomities h4 {
-  color: #30706D;
-  font-size: 27px;
-  text-align: right;
-  position: relative;
-  right: 100px;
+body main section .sections-right .content-right {
+  display: flex;
+  flex-direction: column;
 }
-body section .dolomities p {
-  text-align: right;
+body main section .sections-right .content-right .text {
   position: relative;
-  right: 100px;
-  bottom: 400px;
+  bottom: 20rem;
+}
+body main section .sections-right .content-right .text p {
+  flex: 1;
+  text-align: right;
+  font-size: clamp(0.2rem, 0.5rem + 1vw, 0.9rem);
+  margin-right: 5rem;
+  margin-bottom: 4rem;
+  position: relative;
+  bottom: 90px;
   color: white;
 }
-body section .dolomities h2 {
+body main section .sections-right .content-right .text h2 {
+  flex: 1;
   color: #116495;
-  font-size: 50px;
+  font-size: clamp(1rem, 1rem + 5vw, 4rem);
   text-align: right;
+  margin-right: 5rem;
   position: relative;
-  right: 100px;
   bottom: 40px;
 }
-body section .dolomities img {
+body main section .sections-right .content-right img {
+  display: block;
+  flex: 1;
+  max-width: 100%;
+  box-shadow: 0 0 30px #434343;
+  margin-bottom: 50;
+  align-items: left;
   position: relative;
-  left: -330px;
-  bottom: 270px;
-  box-shadow: 0 0 30px #ccc;
+  bottom: 80px;
+  margin-left: 5rem;
 }
-body section .venice-text h1 {
+body main section .sections-right .content-right h4 {
+  color: white;
   text-align: right;
-  font-size: 300px;
+  font-weight: 600;
+  font-size: clamp(1rem, 1rem + 2vw, 2rem);
+  margin-right: 5rem;
   position: relative;
-  top: 600px;
-  right: 30px;
+  top: 14px;
+}
+body main section .sections-right .gallery {
+  background: rgba(18, 93, 139, 0.23);
+}
+body main section .sections-right .gallery h3 {
+  color: #116495;
+}
+body main section .sections-right .gallery-cell {
+  width: 55%;
+  height: 400px;
+  margin-left: -10px;
+  background: transparent;
+}
+body main section .sections-right .gallery-cell img {
+  max-width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  bottom: 120px;
+  left: -120px;
+}
+body main section .sections-right .gallery-cell:before {
+  display: block;
+  text-align: center;
+  align-items: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  color: transparent;
+}
+body main section .banner {
+  max-width: 200rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main section .sections-left {
+  max-width: 100rem;
+  max-height: 150rem;
+  font-size: 1.3125rem;
+}
+body main section .sections-left .content-letf {
+  display: flex;
+  flex-direction: column;
+}
+body main section .sections-left .content-letf .text-left {
+  position: relative;
+  top: 20px;
+}
+body main section .sections-left .content-letf .text-left p {
+  flex: 1;
+  text-align: left;
+  font-size: clamp(0.2rem, 0.5rem + 1vw, 0.9rem);
+  margin-left: 5rem;
+  margin-bottom: 4rem;
+  position: relative;
+  bottom: 120px;
+  color: white;
+}
+body main section .sections-left .content-letf .text-left h2 {
+  flex: 1;
+  color: #116495;
+  font-size: clamp(1rem, 1rem + 5vw, 4rem);
+  text-align: left;
+  margin-left: 5rem;
+  position: relative;
+  bottom: 80px;
+}
+body main section .sections-left .content-letf img {
+  display: block;
+  flex: 1;
+  max-width: 100%;
+  box-shadow: 0 0 30px #434343;
+  margin-bottom: 50;
+  align-items: right;
+  position: relative;
+  bottom: 380px;
+  margin-left: 55rem;
+}
+body main section .dolomities-text h1 {
+  text-align: left;
+  padding-left: 40px;
+  position: relative;
+  top: 500px;
+  color: #30706D;
+  font-size: clamp(1rem, 1rem + 10vw, 9rem);
+}
+body main section .venice-text h1 {
+  text-align: right;
+  position: relative;
+  top: 660px;
+  right: 20px;
   z-index: -1;
   letter-spacing: 60px;
   color: #30706D;
+  font-size: clamp(0.5rem, 1rem + 20vw, 35rem);
 }
-body section .venice p {
-  text-align: left;
-  position: relative;
-  bottom: 350px;
-  left: 150px;
-  color: white;
-}
-body section .venice h2 {
-  color: #116495;
-  font-size: 50px;
-  text-align: left;
-  position: relative;
-  left: 150px;
-}
-body section .venice img {
-  position: relative;
-  left: 360px;
-  bottom: 220px;
-  box-shadow: 0 0 30px #ccc;
-}
-body section .laspezia-text h1 {
+body main section .laspezia-text h1 {
   text-align: right;
-  font-size: 150px;
+  font-size: clamp(1rem, 1rem + 10vw, 8rem);
+  margin: 100rem 0 0 0;
   position: relative;
-  top: 455px;
-  right: 40px;
+  top: 15rem;
+  right: 3rem;
   color: #30706D;
 }
-body section .manarola p {
+body main section .florence-text h1 {
   text-align: right;
-  position: relative;
-  right: 100px;
-  bottom: 400px;
-  color: white;
-}
-body section .manarola h2 {
-  color: #116495;
-  font-size: 50px;
-  text-align: right;
-  position: relative;
-  right: 100px;
-}
-body section .manarola img {
-  position: relative;
-  left: -330px;
-  bottom: 200px;
-  box-shadow: 0 0 30px #ccc;
-}
-body section .florence-text h1 {
-  text-align: right;
-  font-size: 300px;
   position: relative;
   top: 600px;
-  right: 35px;
   z-index: -1;
   letter-spacing: 10px;
   color: #30706D;
+  font-size: clamp(0.1rem, 1rem + 20vw, 35rem);
 }
-body section .florence p {
-  text-align: left;
-  position: relative;
-  bottom: 350px;
-  left: 150px;
-  color: white;
-}
-body section .florence h2 {
-  color: #116495;
-  font-size: 50px;
-  text-align: left;
-  position: relative;
-  left: 150px;
-}
-body section .florence img {
-  position: relative;
-  left: 360px;
-  bottom: 220px;
-  box-shadow: 0 0 30px #ccc;
-}
-body section .toscana-text h1 {
+body main section .toscana-text h1 {
   text-align: right;
-  font-size: 120px;
+  font-size: clamp(1rem, 1rem + 10vw, 7rem);
   position: relative;
   top: 300px;
-  right: 480px;
+  right: 450px;
   z-index: -1;
   color: #30706D;
 }
-body section .toscana p {
+body main section .content-right .text-toscana {
+  display: flex;
+  flex-direction: column;
+}
+body main section .content-right .text-toscana p {
+  flex: 1;
   text-align: right;
+  font-size: clamp(0.2rem, 0.5rem + 1vw, 0.9rem);
+  margin-right: 3rem;
+  margin-bottom: 4rem;
   position: relative;
-  right: 100px;
-  bottom: 350px;
+  bottom: 380px;
   color: white;
 }
-body section .toscana h2 {
+body main section .content-right .text-toscana h2 {
+  flex: 1;
   color: #116495;
-  font-size: 50px;
+  font-size: clamp(1rem, 1rem + 5vw, 4rem);
   text-align: right;
+  margin-right: 3rem;
   position: relative;
-  right: 100px;
+  bottom: 310px;
 }
-body section .toscana img {
-  position: relative;
-  left: -330px;
-  bottom: 200px;
-  box-shadow: 0 0 30px #ccc;
-}
-body section .milan-text h1 {
+body main section .milan-text h1 {
   text-align: right;
-  font-size: 300px;
+  font-size: clamp(0.1rem, 1rem + 20vw, 35rem);
   position: relative;
   top: 750px;
-  right: 160px;
+  right: 110px;
   z-index: -1;
   letter-spacing: 60px;
   color: #30706D;
 }
-body section .milan p {
-  text-align: left;
-  position: relative;
-  bottom: 380px;
-  left: 150px;
-  color: white;
-}
-body section .milan h2 {
-  color: #116495;
-  font-size: 50px;
-  text-align: left;
-  position: relative;
-  left: 150px;
-}
-body section .milan img {
-  position: relative;
-  left: 360px;
-  bottom: 220px;
-  box-shadow: 0 0 30px #434343;
-}
-body section .pisa-text h1 {
+body main section .pisa-text h1 {
   text-align: right;
-  font-size: 300px;
+  font-size: clamp(1rem, 1rem + 20vw, 30rem);
   position: relative;
   top: 720px;
   right: 540px;
-  color: white;
+  color: #03020D;
 }
-body section .pisa p {
+body main section .verona-text h1 {
   text-align: right;
-  position: relative;
-  right: 100px;
-  bottom: 380px;
-  color: white;
-}
-body section .pisa h2 {
-  color: #116495;
-  font-size: 50px;
-  text-align: right;
-  position: relative;
-  right: 100px;
-}
-body section .pisa img {
-  position: relative;
-  left: -330px;
-  bottom: 200px;
-  box-shadow: 0 0 30px #434343;
-}
-body section .verona-text h1 {
-  text-align: right;
-  font-size: 300px;
+  font-size: clamp(1rem, 1rem + 20vw, 30rem);
   position: relative;
   top: 880px;
   right: 430px;
-  color: white;
+  color: #03020D;
 }
-body section .verona p {
+body main section .content-right .text-verona {
+  display: flex;
+  flex-direction: column;
+}
+body main section .content-right .text-verona p {
+  flex: 1;
   text-align: right;
+  font-size: clamp(0.2rem, 0.5rem + 1vw, 0.9rem);
+  margin-right: 3rem;
+  margin-bottom: 4rem;
   position: relative;
-  right: 100px;
-  bottom: 320px;
+  bottom: 380px;
   color: white;
 }
-body section .verona h2 {
+body main section .content-right .text-verona h2 {
+  flex: 1;
   color: #116495;
-  font-size: 50px;
+  font-size: clamp(1rem, 1rem + 5vw, 4rem);
   text-align: right;
+  margin-right: 3rem;
   position: relative;
-  right: 100px;
+  bottom: 310px;
 }
-body section .verona img {
-  position: relative;
-  left: -330px;
-  bottom: 200px;
-  box-shadow: 0 0 30px #434343;
-}
-body section .back-img {
+body main section .back-img {
   z-index: -2;
   position: relative;
   top: 1220px;
   left: 190px;
 }
-body section .roma-text h1 {
+body main section .roma-text h1 {
   text-align: right;
-  font-size: 300px;
+  font-size: clamp(0.1rem, 1rem + 20vw, 35rem);
   position: relative;
   top: 700px;
   right: 75px;
@@ -452,80 +501,20 @@ body section .roma-text h1 {
   letter-spacing: 60px;
   color: #30706D;
 }
-body section .roma p {
-  text-align: left;
-  position: relative;
-  bottom: 410px;
-  left: 150px;
-  color: white;
-}
-body section .roma h2 {
-  color: #116495;
-  font-size: 50px;
-  text-align: left;
-  position: relative;
-  left: 150px;
-  bottom: 75px;
-}
-body section .roma img {
-  position: relative;
-  left: 360px;
-  bottom: 300px;
-  box-shadow: 0 0 30px #434343;
-}
-body section .puglia-text h1 {
+body main section .puglia-text h1 {
   text-align: right;
-  font-size: 200px;
+  font-size: clamp(0.1rem, 1rem + 10vw, 25rem);
   position: relative;
-  top: 540px;
-  right: 400px;
-  color: #116495;
+  top: 500px;
+  right: 450px;
+  color: #03020D;
 }
-body section .puglia p {
-  text-align: left;
-  position: relative;
-  bottom: 340px;
-  left: 150px;
-  color: white;
-}
-body section .puglia h2 {
-  color: #30706D;
-  font-size: 50px;
-  text-align: left;
-  position: relative;
-  left: 150px;
-}
-body section .puglia img {
-  position: relative;
-  left: 360px;
-  bottom: 220px;
-  box-shadow: 0 0 30px #434343;
-}
-body .gallery {
-  background: rgba(18, 139, 111, 0.23);
-  position: relative;
-  bottom: 150px;
-  justify-content: center;
-}
-body .gallery h3 {
-  text-align: center;
-  padding-right: 40px;
-  padding-top: 10px;
-  color: white;
-}
-body .gallery-cell {
-  width: 35%;
-  height: 400px;
-  margin-left: -10px;
-  background: transparent;
-  position: relative;
-  top: 80px;
-}
-body .gallery-cell:before {
-  display: block;
-  text-align: center;
-  align-items: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  color: transparent;
+@media (max-width: 40em) {
+  body .sections {
+    display: flex;
+    flex-direction: row;
+  }
+  body .sections > * {
+    flex-basis: 100%;
+  }
 }/*# sourceMappingURL=nightmode.css.map */

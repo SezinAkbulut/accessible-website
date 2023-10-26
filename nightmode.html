@@ -11,384 +11,517 @@
 </head>
 
 <body>
-  <!--nav-->
-  <nav>
-      <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-      </ul>
-  </nav>
+
+  <!--go back button-->
+ <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrow up"></i></button>
+
+
+ <!--nav-->
+ <nav>
+     <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Contact</a></li>
+     </ul>
+ </nav>
 <!--header-->
-  <header>
-      <h1>Discover Italy</h1>
-  </header>
+ <header>
+     <h1>Discover Italy</h1>
+ </header>
+
+ 
 
 <!--main-->
-  <main>
-    <article>
-      <a href="index.html"><button  style="float: right;"> Day Mode</button></a>
+ <main>
+     <article>
 
-      <h1>A Country Like No Other</h1>
-
-      <div class="interactive-map">
-
-          <img width="90%" src="italy-map-white.png" alt="italy-map">
-      
-        
-          <!-- Liguria -->
-          <div class="map-point">
-            <span class="tooltip tooltip-effect-4" style="top:31.5%; right:62.5%;">
-              <span class="tooltip-item">
-        <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <span class="tooltip-content clearfix">
-              <a href="#laspezia-section">
-                <p class="tooltip-text">
-                 La Spezia
-                </p>
-                <img width="100%" src="jack-ward-rknrvCrfS1k-unsplash.jpg" alt="The Cliffs of Cinque Terre/Manarola">
-              </a>
-            </span>
-            </span>
-          </div>
-          <!-- Liguria-->
-        
-          <!-- Milan -->
-          <div class="map-point">
-            <span class="tooltip tooltip-effect-4" style="top:24%; right:63.5%;">
-              <span class="tooltip-item">
-        <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <span class="tooltip-content clearfix">
-              <a href="#milan-section">
-                <p class="tooltip-text">
-                  Milan
-                </p>
-                <img width="100%" src="fernando-meloni-x9Qixy7lbzo-unsplash.jpg" alt="Cathedral of Milan">
-              </a>
-            </span>
-            </span>
-          </div>
-          <!-- Milan -->
-        
-      <!-- Liguria -->
-      <div class="map-point">
-          <span class="tooltip tooltip-effect-4" style="top:14.5%; right:54.5%;">
-            <span class="tooltip-item">
-      <i class="fa fa-map-marker" aria-hidden="true"></i>
-          <span class="tooltip-content clearfix">
-             <a href="#dolomities-section"> <p class="tooltip-text">
-               Lake Braies
-              </p>
-              <img width="100%" src="/lorenzo-moschi-XG391m6rH_8-unsplash.jpg" alt="Boats of Lake Braies"></a>
-          </span>
-          </span>
-        </div>
-        <!-- Liguria-->
-        
-        
-        
-          <!-- Veneto -->
-          <div class="map-point">
-            <span class="tooltip tooltip-effect-4" style="top:25%; left:48%;">
-              <span class="tooltip-item">
-        <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <span class="tooltip-content clearfix">
-              <a href="#venezia-section">
-                <p href="#venezia-section" class="tooltip-text"> Venezia 
-                </p>
-                <img width="100%" src="damiano-baschiera-hFXZ5cNfkOk-unsplash.jpg" alt="A gondola in Venice">
-              </a>
-            </span>
-            </span>
-          </div>
-        
-          <div class="map-point">
-            <span class="tooltip tooltip-effect-4" style="top:25%; left:44%;">
-              <span class="tooltip-item">
-        <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <span class="tooltip-content clearfix">
-              
-                <p class="tooltip-text">
-                  Verona
-                </p>
-                <img width="100%"  src="ouael-ben-salah-WJEQdE5_IVQ-unsplash.jpg" alt="A street with orange apartments in Verona">
-            </span>
-            </span>
-          </div>
-          <!-- Veneto -->
-        
-          
-        
-          <!-- Toscana -->
-          <div class="map-point">
-              <span class="tooltip tooltip-effect-4" style="top:35%; right:58.5%;">
-                <span class="tooltip-item">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span class="tooltip-content clearfix">
-                  <p class="tooltip-text">
-                   Pisa
-                  </p>
-                  <img width="100%" src="juan-martin-lopez-W_1BDEDNx6o-unsplash.jpg" alt="Pisa Tower">
-              </span>
-              </span>
-            </div>
-          
-            <div class="map-point">
-              <span class="tooltip tooltip-effect-4" style="top:35%; right:54.5%;">
-                <span class="tooltip-item">
-               <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span class="tooltip-content clearfix">
-                  <a href="#florence-section">
-                  <p class="tooltip-text">
-                    Florence
-                  </p>
-                  <img width="100%" src="alex-azabache-QSHizbKavt8-unsplash.jpg" alt="Duomo in Florence Italy during the Sunrise">
-              </a>
-              </span>
-              </span>
-            </div>
-        
-          <div class="map-point">
-            <span class="tooltip tooltip-effect-4" style="bottom:59%; left:43%;">
-              <span class="tooltip-item">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <span class="tooltip-content clearfix">
-              <a href="#toscana-section">
-                <p class="tooltip-text">
-               Toscana
-                </p>
-                <img width="100%" src="giuseppe-mondi-fJWYwHWYQpY-unsplash.jpg" alt="The dawn of San Quirico d'Orcia">
-              </a>
-            </span>
-            </span>
-          </div>
-        
-          <div class="map-point">
-            <span class="tooltip tooltip-effect-4" style="bottom:49%; left:50%;">
-              <span class="tooltip-item">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <span class="tooltip-content clearfix">
-              <a href="#roma-section">
-                <p class="tooltip-text">
-                Roma
-                </p>
-                <img width="100%" src="francesco-bruno-ZaBjw3Bsv2c-unsplash.jpg" alt="Fontana Di Trevi, Roma">
-              </a>
-            </span>
-            </span>
-          </div>
-        
-       
-      
-        
-          <!-- Puglia -->
-          <div class="map-point">
-              
-            <span class="tooltip tooltip-effect-4" style="top:58%; right:32%;">
-              <span class="tooltip-item">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <span class="tooltip-content clearfix">
-              <a href="#"> <p class="tooltip-text">
-                  Puglia
-                </p>
-                <img width="100%" src="massimo-virgilio-ttysWlatZtY-unsplash.jpg" alt="Puglia cliff and Adriatic sea">  </a>
-            </span>
-            </span>
+         <a href="index.html"><button  style="float: right;" >Light Mode</button></a>
          
-          </div>
-          <!-- Puglia -->
+         <h1>A Country Like No Other</h1>
+
         
+
+         <div class="interactive-map">
+
+             <img width="90%" src="italy-map-white.png" alt="italy-map">
+         
+           
+             <!-- Liguria -->
+             <div class="map-point">
+                 
+               <span class="tooltip tooltip-effect-4" style="top:31.5%; right:62.5%;">
+                 <span class="tooltip-item">
+           <i class="fa fa-map-marker" aria-hidden="true"></i>
+               <span class="tooltip-content clearfix">
+                 <a href="#laspezia-section">
+                   <p class="tooltip-text">
+                    La Spezia
+                   </p>
+                   <img width="100%" src="jack-ward-rknrvCrfS1k-unsplash.jpg" alt="The Cliffs of Cinque Terre/Manarola">
+                 </a>
+               </span>
+               </span>
+             </div>
+             <!-- Liguria-->
+           
+             <!-- Milan -->
+             <div class="map-point">
+               <span class="tooltip tooltip-effect-4" style="top:24%; right:63.5%;">
+                 <span class="tooltip-item">
+           <i class="fa fa-map-marker" aria-hidden="true"></i>
+               <span class="tooltip-content clearfix">
+                 <a href="#milan-section">
+                   <p class="tooltip-text">
+                     Milan
+                   </p>
+                   <img width="100%" src="fernando-meloni-x9Qixy7lbzo-unsplash.jpg" alt="Cathedral of Milan">
+                 </a>
+               </span>
+               </span>
+             </div>
+             <!-- Milan -->
+           
+         <!-- Liguria -->
+         <div class="map-point">
+             <span class="tooltip tooltip-effect-4" style="top:14.5%; right:54.5%;">
+               <span class="tooltip-item">
+         <i class="fa fa-map-marker" aria-hidden="true"></i>
+             <span class="tooltip-content clearfix">
+                <a href="#dolomities-section"> <p class="tooltip-text">
+                  Lake Braies
+                 </p>
+                 <img width="100%" src="/lorenzo-moschi-XG391m6rH_8-unsplash.jpg" alt="Boats of Lake Braies"></a>
+             </span>
+             </span>
+           </div>
+           <!-- Liguria-->
+           
+           
+           
+             <!-- Veneto -->
+             <div class="map-point">
+               <span class="tooltip tooltip-effect-4" style="top:25%; left:48%;">
+                 <span class="tooltip-item">
+           <i class="fa fa-map-marker" aria-hidden="true"></i>
+               <span class="tooltip-content clearfix">
+                 <a href="#venezia-section">
+                   <p href="#venezia-section" class="tooltip-text"> Venezia 
+                   </p>
+                   <img width="100%" src="damiano-baschiera-hFXZ5cNfkOk-unsplash.jpg" alt="A gondola in Venice">
+                 </a>
+               </span>
+               </span>
+             </div>
+           
+             <div class="map-point">
+               <span class="tooltip tooltip-effect-4" style="top:25%; left:44%;">
+                 <span class="tooltip-item">
+           <i class="fa fa-map-marker" aria-hidden="true"></i>
+               <span class="tooltip-content clearfix">
+                 <a href="#verona-section">
+                   <p class="tooltip-text">
+                     Verona
+                   </p>
+                   <img width="100%"  src="ouael-ben-salah-WJEQdE5_IVQ-unsplash.jpg" alt="A street with orange apartments in Verona">
+                 </a>
+               </span>
+               </span>
+             </div>
+             <!-- Veneto -->
+           
+             
+           
+             <!-- Toscana -->
+             <div class="map-point">
+                 <span class="tooltip tooltip-effect-4" style="top:35%; right:58.5%;">
+                   <span class="tooltip-item">
+                 <i class="fa fa-map-marker" aria-hidden="true"></i>
+                 <span class="tooltip-content clearfix">
+                     <a href="#pisa-section">
+                     <p class="tooltip-text">
+                      Pisa
+                     </p>
+                     <img width="100%" src="juan-martin-lopez-W_1BDEDNx6o-unsplash.jpg" alt="Pisa Tower">
+                 </a>
+                 </span>
+                 </span>
+               </div>
+             
+               <div class="map-point">
+                 <span class="tooltip tooltip-effect-4" style="top:35%; right:54.5%;">
+                   <span class="tooltip-item">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                 <span class="tooltip-content clearfix">
+                     <a href="#florence-section">
+                     <p class="tooltip-text">
+                       Florence
+                     </p>
+                     <img width="100%" src="alex-azabache-QSHizbKavt8-unsplash.jpg" alt="Duomo in Florence Italy during the Sunrise">
+                 </a>
+                 </span>
+                 </span>
+               </div>
+           
+             <div class="map-point">
+               <span class="tooltip tooltip-effect-4" style="bottom:59%; left:43%;">
+                 <span class="tooltip-item">
+                 <i class="fa fa-map-marker" aria-hidden="true"></i>
+               <span class="tooltip-content clearfix">
+                 <a href="#toscana-section">
+                   <p class="tooltip-text">
+                  Toscana
+                   </p>
+                   <img width="100%" src="giuseppe-mondi-fJWYwHWYQpY-unsplash.jpg" alt="The dawn of San Quirico d'Orcia">
+                 </a>
+               </span>
+               </span>
+             </div>
+           
+             <div class="map-point">
+                 <span class="tooltip tooltip-effect-4" style="bottom:50%; left:50%;">
+                   <span class="tooltip-item">
+                   <i class="fa fa-map-marker" aria-hidden="true"></i>
+                 <span class="tooltip-content clearfix">
+                   <a href="#roma-section">
+                     <p class="tooltip-text">
+                     Roma
+                     </p>
+                     <img width="100%" src="francesco-bruno-ZaBjw3Bsv2c-unsplash.jpg" alt="Fontana Di Trevi, Roma">
+                   </a>
+                 </span>
+                 </span>
+               </div>
+           
           
-      </div>
-    </article>
-
-      <section>
-        <!--Dolomities-->
-            <div id="dolomities-section" class="dolomities-text">
-                <h1>Dolomities</h1>
-            </div>
-        
-        <img width="90%" src="snow.png" alt="Alps">
-
-        <div id="dolomities" class="dolomities">
-          <h4>The Jewel of The Dolomites</h4>
-            <h2>Lake Braies</h2>
-            <img width="30%" src="samuele-errico-piccarini-JEBqFu2AOOA-unsplash.jpg" alt="Lake Braies">
+         
+           
+             <!-- Puglia -->
+             <div class="map-point">
+                 
+               <span class="tooltip tooltip-effect-4" style="top:57%; right:33%;">
+                 <span class="tooltip-item">
+                 <i class="fa fa-map-marker" aria-hidden="true"></i>
+               <span class="tooltip-content clearfix">
+                 <a href="#puglia-section"> <p class="tooltip-text">
+                     Puglia
+                   </p>
+                   <img width="100%" src="massimo-virgilio-ttysWlatZtY-unsplash.jpg" alt="Puglia cliff and Adriatic sea">  </a>
+               </span>
+               </span>
             
-                <p>Lago di Braies is one of the most beautiful <br>lakes in Italy. Located at an altitude of about <br> 1,500 m above sea level in the picturesque <br>Alta Pusteria / Hochpustertal, the mountain <br>lake captivates with its turquoise-green colour <br> and the imposing Seekofel massif (2,810 m) <br>that surrounds it.</p>
-        </div>
+             </div>
+             <!-- Puglia -->
+           
+             
+         </div>
+     </article>
 
-    <!--Venezia-->
-        <div id="venezia-section" class="venice-text">
-            <h1>Venice</h1>
-        </div>
+         <section>
+              
+         <!--Dolomities-->
+         <figure class="sections-right">
+             <figcaption id="dolomities-section" class="dolomities-text">
+                 
+                 <h1>Dolomities</h1>
+                 
+                 
+             </figcaption>
+         
+             <div class="banner">
+                 <img width="100%" src="snow.png" alt="Alps">
+             </div>
+         
 
-        <img width="50%" src="angelo-casto-gHQgTrMgzHQ-unsplash.png" alt="A person wearing a traditional mask of Venice">
+         <figcaption id="dolomities" class="content-right">
+             <div>
+                 <img width="30%" src="samuele-errico-piccarini-JEBqFu2AOOA-unsplash.jpg" alt="Lake Braies">
+             </div>
 
-        <div class="venice">
-            <h2>Venice</h2>
-            <img width="30%" src="soroush-karimi--_sqg5n-i54-unsplash.jpg" alt="The bridge connecting to the Venetian prison">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
-        </div>
+             <div class="text">
+                 <h4>The Jewel of The Dolomites</h4>
+                 <h2>Lake Braies</h2>
+         
+                  <p>Lago di Braies is one of the most beautiful <br>lakes in Italy. Located at an altitude of about <br> 1,500 m above sea level in the picturesque <br>Alta Pusteria / Hochpustertal, the mountain <br>lake captivates with its turquoise-green colour <br> and the imposing Seekofel massif (2,810 m) <br>that surrounds it.</p>
+
+             </div>
+             
+         </figcaption>
+
+         </figure>
+             
+
+     <!--Venezia-->
+     <figure class="sections-left">
+         <figcaption id="venezia-section" class="venice-text">
+             <h1>Venice</h1>
+             <div class="banner">
+                 <img width="50%" src="angelo-casto-gHQgTrMgzHQ-unsplash.png" alt="A person wearing a traditional mask of Venice">
+             </div>
+         </figcaption>
+
+         
+         
+         <figcaption class="content-letf">
+             <div class="text-left">
+             <h2>Venice</h2>
+            
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
+             </div>
+
+             <div>
+                 <img width="30%" src="soroush-karimi--_sqg5n-i54-unsplash.jpg" alt="The bridge connecting to the Venetian prison">
+             </div>
+             
+         </figcaption>
+     </figure>
+
+         
+         <!--La Spezia-->
+         <figure class="sections-right">
+             <figcaption id="laspezia-section" class="laspezia-text">
+                 <h1>La Spezia</h1>
+                 <div class="banner">
+                     <img width="100%" src="laspezia.png" alt="Love locks">
+                 </div>
+             </figcaption>
+             
+             
+             
+             <figcaption class="content-right">
+                 <div >
+                     <img width="31%" src="andreas-kretschmer--ahOKp3g4-I-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
+                 </div>
+                 <div class="text">
+                     <h2>Cinque Terre</h2>
+                 
+                 <p>Cinque Terre, the five towns, is a string of <br> five old fishing villages perched high on the <br> Italian Riviera in the region Liguria, which <br> until recently were linked only by mule tracks<br> and accessible only by rail or water.
+                 </p> <br><br>
+                 </div>
+             </figcaption>
+            
+                 
+                 <div class="gallery js-flickity"
+                 data-flickity-options='{ "wrapAround": true }'>
+                 <h3>Monterosso</h3>
+                 <div class="gallery-cell">
+                     <img width="80%" height="60%" src="chairs-umbrellas-fill-spiaggia-d.jpeg" alt="Manarola/Cinque Terre/La Spezia">
+                 </div>
+                 <h3>Vernazza</h3>
+                 <div class="gallery-cell">
+                     <img width="80%" height="60%" src="anders-jilden-cYrMQA7a3Wc-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
+                 </div>
+                 <h3>Corniglia</h3>
+                 <div class="gallery-cell">
+                     <img width="80%" height="60%"  src="ansgar-scheffold-6hokOAEHOII-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
+                 </div>
+                 <h3>Manarola</h3>
+                 <div class="gallery-cell">
+                     <img width="80%" height="60%" src="vidar-nordli-mathisen-SF2yQGSZ_Pg-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
+                 </div>
+                 <h3>Riomaggiore</h3>
+                 <div class="gallery-cell">
+                     <img width="80%" height="60%"  src="hongbin-glhRZYIAKb4-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
+                 </div>
+             </div>
         
-        <!--La Spezia-->
-        <div id="laspezia-section" class="laspezia-text">
-          <h1>La Spezia</h1>
-      </div>
-      
-
-      <img width="100%" src="laspezia.png" alt="Love locks">
-
-      <div class="manarola">
-          <h2>Cinque Terre</h2>
-          <img width="30%" src="andreas-kretschmer--ahOKp3g4-I-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
-          <p>Cinque Terre, the five towns, is a string of <br> five old fishing villages perched high on the <br> Italian Riviera in the region Liguria, which <br> until recently were linked only by mule tracks<br> and accessible only by rail or water.
-          </p> <br><br>
-
-          <div class="gallery js-flickity"
-                data-flickity-options='{ "wrapAround": true }'>
-                <h3>Monterosso</h3>
-                <div class="gallery-cell">
-                    <img width="80%" height="60%" src="chairs-umbrellas-fill-spiaggia-d.jpeg" alt="Manarola/Cinque Terre/La Spezia">
-                </div>
-                <h3>Vernazza</h3>
-                <div class="gallery-cell">
-                    <img width="80%" height="60%" src="anders-jilden-cYrMQA7a3Wc-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
-                </div>
-                <h3>Corniglia</h3>
-                <div class="gallery-cell">
-                    <img width="80%" height="60%"  src="ansgar-scheffold-6hokOAEHOII-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
-                </div>
-                <h3>Manarola</h3>
-                <div class="gallery-cell">
-                    <img width="80%" height="60%" src="vidar-nordli-mathisen-SF2yQGSZ_Pg-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
-                </div>
-                <h3>Riomaggiore</h3>
-                <div class="gallery-cell">
-                    <img width="80%" height="60%"  src="hongbin-glhRZYIAKb4-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
-                </div>
-            </div>
-            </div>
-
-        <!--Florence-->
-        <div id="florence-section" class="florence-text">
-            <h1>Florence</h1>
-        </div>
-        
-
-        <img width="50%" src="florence.png" alt="Love locks">
-
-        <div class="florence">
-            <h2>Florence</h2>
-            <img width="30%" src="tolga-kilinc-fo1O6INiE2Y-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
-        </div>
-       
-       
-        <!--Toscana-->
-        <div id="toscana-section" class="toscana-text">
-            <h1>Toscana</h1>
-        </div>
-        
-
-        <img width="101%" src="Subtract.png" alt="Love locks">
-
-        <div class="toscana">
-            <h2>Toscana</h2>
-            <img width="30%" src="engjell-gjepali-M0OIyN5u8ZM-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
-        </div>
-
-         <!--Milan-->
-         <div id="milan-section" class="milan-text">
-            <h1>Milan</h1>
-        </div>
-        
-
-        <img width="100%" src="milan.png" alt="Love locks">
-
-        <div class="milan">
-            <h2>Milan</h2>
-            <img width="30%" src="ouael-ben-salah-0xe2FGo7Vc0-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
-        </div>
-       
-        <!--Pisa-->
-        <div id="pisa-section" class="pisa-text">
-          <h1>Pisa</h1>
-      </div>
-      
-
-      <img width="100%" src="ray-harrington-tKGq8vGt6ns-unsplash.jpg" alt="Love locks">
-
-      <div class="pisa">
-          <h2>Pisa</h2>
-          <img width="30%" src="federico-di-dio-photography-WFlxF-0fhIE-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
-      </div>
+         </figure>
+         
 
 
-      <!--Verona-->
-      <div id="verona-section" class="verona-text">
-          <h1>Verona</h1>
-      </div>
-      
 
-      <img width="100%" src="patrick-pahlke-a0pv66dZPeA-unsplash.jpg" alt="Love locks">
+         <!--Florence-->
+         <figure class="sections-left">
+             <figcaption id="florence-section" class="florence-text">
+                 <h1>Florence</h1>
+                 <div class="banner">
+                     <img width="50%" src="florence.png" alt="Love locks">
+                 </div>
+             </figcaption>
+             
+             
+             <figcaption class="content-letf">
+                 <div class="text-left">
+                 <h2>Florence</h2>
+                 
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
+                 </div>
 
-      <div class="verona">
-          <h2>Verona</h2>
-          <img width="40%" src="world-of-magic-nmM8sxZwsuY-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
-      </div>
+                 <div>
+                     <img width="30%" src="tolga-kilinc-fo1O6INiE2Y-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
+                 </div>
+                 
+             </figcaption>
+         </figure>
+            
+             <!--Toscana-->
+             <figure class="sections-right">
+             <figcaption id="toscana-section" class="toscana-text">
+                 <h1>Toscana</h1>
+                 <div class="banner">
+                     <img width="101%" src="Subtract.png" alt="Love locks">
+                 </div>
+             </figcaption>
+             
+             
+             
+             <figcaption class="content-right">
+                 <div>
+                     <img width="30%" src="engjell-gjepali-M0OIyN5u8ZM-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
 
-       <!--Roma-->
-       <div class="back-img">
-          <img class="img-back" width="50%" src="Subtract3.png" alt="Love locks">
-       </div>
-       <div id="roma-section" class="roma-text">
-          <h1>Roma</h1>
-      </div>
-      
+                 </div>
 
-      <img width="100%" src="romamotor.png" alt="Love locks">
-     
+                 <div class="text-toscana">
+                 <h2>Toscana</h2>
+                 
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
+                 </div>
+                 
+             </figcaption>
+ 
+         </figure>
 
-      <div class="roma">
-          <h2>Roma</h2>
-          <img width="30%" src="michele-bitetto-2y6ojwauKJI-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
-      </div>
-     
+         
+          <!--Milan-->
+          <figure class="sections-left">
+             <figcaption id="milan-section" class="milan-text">
+                 <h1>Milan</h1>
+                 <div class="banner">
+                     <img width="100%" src="milan.png" alt="Love locks">
+                 </div>
+             </figcaption>
+             
+             
+             <figcaption class="content-letf">
+                 <div class="text-left">
+                 <h2>Milan</h2>
+                 
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
+                 </div>
+                 <div>
+                     <img width="30%" src="ouael-ben-salah-0xe2FGo7Vc0-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
+                 </div>
+                 
+             </figcaption>
+          </figure>
+         
 
-      <!--Puglia-->
-      <div id="puglia-section" class="puglia-text">
-          <h1>Puglia</h1>
-      </div>
-      
+         <!--Pisa-->
+         <figure class="sections-right">
+             <figcaption id="pisa-section" class="pisa-text">
+                 <h1>Pisa</h1>
+                 <div class="banner">
+                     <img width="100%" src="ray-harrington-tKGq8vGt6ns-unsplash.jpg" alt="Love locks">
+                 </div>
+             </figcaption>
+             
+             
+             
+             <figcaption class="content-right">
+                 <div>
+                     <img width="30%" src="federico-di-dio-photography-WFlxF-0fhIE-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
+                 </div>
 
-      <img width="100%" src="rocks.png" alt="Love locks">
+                 <div class="text">
+                     <h2>Pisa</h2>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
+                 </div>
+                
+             </figcaption>    
+         </figure>
+         
 
-      <div class="puglia">
-          <h2>Puglia</h2>
-          <img width="30%" src="kirsten-velghe-O7IulWjXAJ0-unsplash.jpg" alt="Polignano a Mare, Bari, Italy">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
-      </div>
+         <!--Verona-->
+         <figure class="sections-right">
+             <figcaption id="verona-section" class="verona-text">
+                 <h1>Verona</h1>
+                 <div class="banner">
+                     <img width="100%" src="patrick-pahlke-a0pv66dZPeA-unsplash.jpg" alt="Love locks">
+                 </div>
+             </figcaption>
+             
+             
+ 
+             <figcaption class="content-right">
+                 <div>
+                     <img width="40%" src="world-of-magic-nmM8sxZwsuY-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
+                 </div>
+                 <div class="text-verona">
+                     <h2>Verona</h2>
+                 
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
+                 </div>
+                
+             </figcaption>
+         </figure>
+         
 
-    
+          <!--Roma-->
 
-   
+          <figure class="sections-left">
+             <div class="back-img">
+                 <img class="img-back" width="50%" src="Subtract3.png" alt="Love locks">
+              </div>
+              <figcaption id="roma-section" class="roma-text">
+                 <h1>Roma</h1>
+                 <div class="banner">
+                     <img width="100%" src="romamotor.png" alt="Love locks">
+                 </div>
+             </figcaption>
+             
+             
+             
+             <figcaption class="content-letf">
+                 <div class="text-left">
+                 <h2>Roma</h2>
+                 
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
+                 </div>
 
-    </section>
+                 <div>
+                     <img width="30%" src="michele-bitetto-2y6ojwauKJI-unsplash.jpg" alt="Manarola/Cinque Terre/La Spezia">
 
+                 </div>
 
-  </main>
+                 
+             </figcaption>    
+          </figure>
+          
+
+         <!--Puglia-->
+         <figure class="sections-left">
+             <figcaption id="puglia-section" class="puglia-text">
+                 <h1>Puglia</h1>
+                 <div class="banner">
+                     <img width="100%" src="rocks.png" alt="Love locks">
+                 </div>
+             </figcaption>
+             
+            
+             
+             <figcaption class="content-letf">
+                 <div class="text-left">
+                 <h2>Puglia</h2>
+                 
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Consequatur quos, iusto ullam necessitatibus sit  <br> impedit commodi aut quibusdam voluptatem <br> fuga eveniet sequi, laboriosam sapiente. <br> Commodi officiis amet magni quidem placeat!</p>
+                 </div>
+
+                 <div>
+                     <img width="30%" src="kirsten-velghe-O7IulWjXAJ0-unsplash.jpg" alt="Polignano a Mare, Bari, Italy">
+                 </div>
+                 
+             </figcaption>
+         </figure>
+
+     </section>
+
+ </main>
 
 <!--footer-->
-  <footer>
-      
+ <footer>
+     
 
-  </footer>
-  <script src='//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'></script>
+ </footer>
+ <script src='//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'></script>
+ <script src="script.js"></script>
 </body>
 </html>
